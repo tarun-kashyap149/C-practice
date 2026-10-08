@@ -10,7 +10,7 @@ class employee{
     void enter_data(){
         cout<<"Enter Employee name:";
         cin>>emp_name;
-        cout<<"Enter Employee id:";
+        cout<<"Enter Employee ID:";
         cin>>id;
         total_imp++;
 
@@ -18,7 +18,7 @@ class employee{
 
     }
     void display_data(){
-        cout<<"Employee name:"<<emp_name<<endl<<"Employee id:"<<id<<endl;
+        cout<<"Employee name:"<<emp_name<<endl<<"Employee ID:"<<id<<endl;
         
 
 

@@ -3,30 +3,30 @@
 using namespace std;
 class account{
     private:
-    int account_number;
+    int ac_nu;
     string holder_name;
-    int balance=0;
-    int password;
+    double balance;
     public:
-    void Enter_account_details(){
+    void create_account(){
         cout<<"Enter account number:";
-        cin>>account_number;
-        cout<<"Enter account holder_name:";
+        cin>>ac_nu;
+        cout<<"Enter holder name:";
         cin>>holder_name;
-        cout<<"Create password:";
-        cin>>password;
+       
     }
+
     void deposit(){
-        int i;
+        double i;
         cout<<"Deposite money:";
         cin>>i;
         balance= balance+i;
 
     }
     void withdraw(){
-        int j;
-        cout<<"Enter Amount to withdraw:";
+        double j;
+        cout<<"Enter amount to withdraw:";
         cin>>j;
+
         if(balance<j){
             cout<<"You dont have sufficient balance!"<<endl;
             cout<<"Total balance:"<<balance;
@@ -35,23 +35,23 @@ class account{
 
         
         balance= balance-j;
-        cout<<"Total money withdrow:"<<j<<endl<<"Remaining balance:"<<balance;
+        cout<<"Total money withdrow:"<<j<<endl<<"Remaining balance:"<<balance<<endl;
         }
 
     }
-    // void display_account(){
-    //     cout<<"Enter account number to See balance:";
-        
-        
-    // }
+    void display_account(){
+        cout<<"Account Number: "<<ac_nu<<endl<<"Name: "<<holder_name<<endl<<"Balance:"<<balance<<endl<<"======Thankyou for using Apna Paraya bank======";
+    }
+   
 
 };
 int main(){
 cout<<"Welcome to Apna paraya bank!"<<endl;
 account User1;
-User1.Enter_account_details();
+User1.create_account();
 User1.deposit();
 User1.withdraw();
+User1.display_account();
 
 
 
