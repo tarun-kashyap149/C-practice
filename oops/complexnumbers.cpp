@@ -22,6 +22,13 @@ class complex_no{
         return temp;
     }
 };
+complex_no nonmember( complex_no Z1, complex_no Z2){
+    complex_no temp;
+    temp.real = Z1.real + Z2.real;
+    temp.imagi= Z1.imagi + Z2.imagi;
+    return temp;
+}
+
 int main(){
     complex_no Z1,Z2,Z3;
     cout<<"Enter Z1 details:"<<endl;
@@ -29,7 +36,14 @@ int main(){
     cout<<"Enter Z2 details:"<<endl;
     Z2.enter_numbers();
    Z3= Z1.add(Z2);
+   cout<<"Member function:"<<endl;
+   Z3.display();
+   cout<<endl;
+   
+    Z3 = nonmember(Z1, Z2);
+    cout<<" Non Member function call:"<<endl;
     Z3.display();
+
 
 
 
