@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>India Image Map</title>
+</head>
+<body style="text-align:center; background-color: rgb(19,17,17); color: white;">
+    <h1 style="color: rgb(175,175,230);">India Map - Image Map</h1>
+    <p>Map pe Rectangle, Circle aur Polygon pe click karo!</p>
+    <hr>
+
+   
+    <img src="content/download (1).webp" usemap="#indiamap" width="500" height="600" alt="India Map">
+
+    <map name="indiamap">
+       
+        <area shape="rect" coords="150,180,230,250" href="https://en.wikipedia.org/wiki/Uttar_Pradesh" target="_blank" alt="Delhi" title="UP - Rectangle">
+
+      
+        <area shape="circle" coords="250,350,50" href="https://en.wikipedia.org/wiki/Odisha" target="_blank" alt="Madhya Pradesh" title="odisa - Circle">
+
+      
+        <area shape="poly" coords="230,500,280,480,310,540,270,580,220,550" href="https://en.wikipedia.org/wiki/Tamil_Nadu" target="_blank" alt="Tamil Nadu" title="Tamil Nadu - Polygon">
+    </map>
+
+    <hr>
+    <p>
+        <b style="color:yellow;">Rectangle = Delhi</b> &nbsp; | &nbsp;
+        <b style="color:lightgreen;">Circle = odisha</b> &nbsp; | &nbsp;
+        <b style="color:orange;">Polygon = Tamil Nadu</b>
+    </p>
+</body>
+</html>
